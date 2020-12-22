@@ -3,8 +3,8 @@
 #include "y.tab.h"
 %}
 
-caracter [A-Za-z]
-cifra [0-9]
+character [A-Za-z]
+digit [0-9]
 
 %%
 
@@ -39,7 +39,7 @@ cifra [0-9]
 ")" {return CLPR;}
 "." {return DOT;}
 "," {return COMMA;}
-{caracter}({caracter}|{cifra})* {return VAR;}
-{cifra}+ {return NUM;}
+{character}({character}|{digit})* {return VAR;}
+{digit}+ {return NUM;}
 [\t] ;
 \n {yylineno++;}

@@ -113,7 +113,7 @@ int este_declarat(char a[20]){
         }
     }
     if(ok==0){
-        fprintf("Eroare! Variabila %s nu a fost declarata!",a);
+        printf("Eroare! Variabila %s nu a fost declarata!",a);
     }
     return tipDeReturnat;
 }

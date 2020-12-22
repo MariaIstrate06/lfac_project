@@ -1,0 +1,4 @@
+yacc -d compilator.y
+lex compilator.l
+gcc lex.yy.c y.tab.c -ll -ly -o compilator
+gcc lex.yy.c y.tab.c -ll -ly -o comp.text
